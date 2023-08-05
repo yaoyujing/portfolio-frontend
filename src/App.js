@@ -1,12 +1,18 @@
-import "./App.css";
-import HomePage from "./components/homePage";
+import HomePage from "./pages/home";
+import MyProjects from "./pages/myProjects";
+import MySkills from "./pages/mySkills";
+import ContactMe from "./pages/contactMe";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/project" element={<MyProjects />}></Route>
+        <Route path="/skills" element={<MySkills />}></Route>
+        <Route path="/contactMe" element={<ContactMe />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
