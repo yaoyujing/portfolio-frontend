@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../css/home.css";
 import ecommerce from "../assets/images/ecommerce.jpg";
 import fishProject from "../assets/images/fishProject.jpg";

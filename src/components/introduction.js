@@ -42,23 +42,23 @@ export default function Introduction() {
               </Link>
             </div>
           </div>
-          <img className="w-[380px] h-[380px]" src={L}></img>
+          <img className="w-[380px] h-[380px]" alt='' src={L}></img>
         </div>
       </div>
       <div className="flex items-center justify-center gap-6 pt-20">
         <a href="https://www.linkedin.com/in/yaoyujing" target="_blank">
           {" "}
-          <img src={LinkedinSVG} className="w-[80px] h-[60px] "></img>
+          <img src={LinkedinSVG} alt='' className="w-[80px] h-[60px] "></img>
         </a>
         <a href="https://github.com/yaoyujing" target="_blank">
           {" "}
-          <img src={githubSVG} className="w-[80px] h-[60px] "></img>
+          <img src={githubSVG} alt='' className="w-[80px] h-[60px] "></img>
         </a>
         <a href="https://t.me/yaoyujing" target="_blank">
-          <img src={TelegramSVG} className="w-[26px] h-[60px]"></img>
+          <img src={TelegramSVG} alt='' className="w-[26px] h-[60px]"></img>
         </a>
         <a href="https://wa.me/6590586759" target="_blank">
-          <img src={WhatsAppSVG} className="w-[40px] h-[60px]"></img>
+          <img src={WhatsAppSVG} alt='' className="w-[40px] h-[60px]"></img>
         </a>
       </div>
     </div>
