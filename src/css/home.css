@@ -1,3 +1,8 @@
 #navbarLinks{
     padding:10px;
 }
+
+button:disabled {
+    background-color: #ccc; /* Change this to the desired grey color */
+    cursor: not-allowed;   /* Optional: Show a "not-allowed" cursor when hovering over the disabled button */
+}

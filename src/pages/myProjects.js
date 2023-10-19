@@ -1,10 +1,11 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/genericSections/navbar";
 import Project from "../components/projects";
+import Background from "../components/genericSections/background";
 export default function MyProjects() {
   return (
-    <div className="bg-gradient-to-r from-blue-200 h-screen">
+    <Background>
       <Navbar></Navbar>
       <Project></Project>
-    </div>
+    </Background>
   );
 }

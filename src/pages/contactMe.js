@@ -1,10 +1,12 @@
-import Navbar from "../components/navbar";
-import ContactMeComp from "../components/contactMe";
+import Navbar from "../components/genericSections/navbar";
+import ContactMeComp from "../components/contactMeComponents/contactMe";
+import Background from "../components/genericSections/background";
 export default function ContactMe() {
   return (
-    <div className="bg-gradient-to-r from-blue-200 h-screen">
+    <Background>
       <Navbar></Navbar>
       <ContactMeComp></ContactMeComp>
-    </div>
+      {/* <ContactLinks></ContactLinks> */}
+    </Background>
   );
 }
