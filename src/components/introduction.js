@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import L from "../assets/images/L.png";
-import { useSelector, useDispatch } from "react-redux";
+import {  useDispatch } from "react-redux";
 import { setActiveButton } from "../redux/boilerplate/activeButtonSlice";
 import LinkedinSVG from "../assets/images/Linkedin.svg";
 import TelegramSVG from "../assets/images/telegram.svg";
@@ -46,18 +46,18 @@ export default function Introduction() {
         </div>
       </div>
       <div className="flex items-center justify-center gap-6 pt-20">
-        <a href="https://www.linkedin.com/in/yaoyujing" target="_blank">
+        <a href="https://www.linkedin.com/in/yaoyujing" target="_blank" rel="noreferrer">
           {" "}
           <img src={LinkedinSVG} alt='' className="w-[80px] h-[60px] "></img>
         </a>
-        <a href="https://github.com/yaoyujing" target="_blank">
+        <a href="https://github.com/yaoyujing" target="_blank" rel="noreferrer">
           {" "}
-          <img src={githubSVG} alt='' className="w-[80px] h-[60px] "></img>
+          <img src={githubSVG} alt='' className="w-[80px] h-[60px] " ></img>
         </a>
-        <a href="https://t.me/yaoyujing" target="_blank">
+        <a href="https://t.me/yaoyujing" target="_blank" rel="noreferrer">
           <img src={TelegramSVG} alt='' className="w-[26px] h-[60px]"></img>
         </a>
-        <a href="https://wa.me/6590586759" target="_blank">
+        <a href="https://wa.me/6590586759" target="_blank" rel="noreferrer">
           <img src={WhatsAppSVG} alt='' className="w-[40px] h-[60px]"></img>
         </a>
       </div>

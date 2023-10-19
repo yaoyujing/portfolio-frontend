@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import { useState } from "react";
 import "../../css/home.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import LinkedinSVG from "../../assets/images/Linkedin.svg";
@@ -11,10 +10,8 @@ export default function ContactMeComp() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
-  const [recaptchaVerified, setRecaptchaVerified] = useState(false);
   const onSubmit = (data) => console.log(data);
   const onChange = () =>
     (document.getElementById("submitBtn").disabled = false);
@@ -26,7 +23,7 @@ export default function ContactMeComp() {
       </p>
       <div className="w-full flex items-center justify-center flex-1 mb-20">
         <div className="h-[532px] bg-white shadow-xl ">
-          <img src={ContactUsSVG} className="h-full py-20"></img>
+          <img src={ContactUsSVG} className="h-full py-20" alt=""></img>
         </div>
 
         <form
@@ -78,15 +75,15 @@ export default function ContactMeComp() {
             Submit
           </button>
           <div className="flex items-center gap-6">
-            <a href="https://www.linkedin.com/in/yaoyujing" target="_blank">
+            <a href="https://www.linkedin.com/in/yaoyujing" target="_blank" rel="noreferrer">
               {" "}
-              <img src={LinkedinSVG} className="w-[80px] h-[60px] "></img>
+              <img src={LinkedinSVG} className="w-[80px] h-[60px] " alt=""></img>
             </a>
-            <a href="https://t.me/yaoyujing" target="_blank">
-              <img src={TelegramSVG} className="w-[26px] h-[60px]"></img>
+            <a href="https://t.me/yaoyujing" target="_blank" rel="noreferrer">
+              <img src={TelegramSVG} className="w-[26px] h-[60px]" alt=""></img>
             </a>
-            <a href="https://wa.me/6590586759" target="_blank">
-              <img src={WhatsAppSVG} className="w-[40px] h-[60px]"></img>
+            <a href="https://wa.me/6590586759" target="_blank" rel="noreferrer">
+              <img src={WhatsAppSVG} className="w-[40px] h-[60px]" alt=""></img>
             </a>
           </div>
         </form>

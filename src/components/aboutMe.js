@@ -1,4 +1,3 @@
-import L from "../assets/images/L.png";
 export default function AboutMeComp() {
   return (
     <div

@@ -13,7 +13,7 @@ export default function Project() {
       </p>
       <div className="flex gap-[50px] items-center justify-center">
         <div className={cardCss}>
-          <img src={ecommerce} className="w-60 bg-slate-300 rounded-lg"></img>
+          <img src={ecommerce} className="w-60 bg-slate-300 rounded-lg" alt=""></img>
           <p>uShop (2023)</p>
           <div className="flex gap-2 items-center text-white font-bold">
             <div className="border bg-orange-400 rounded-lg px-2 py-1 text-[12px] flex items-center">
@@ -33,12 +33,13 @@ export default function Project() {
             href="http://stg.ushop.market/"
             target="_blank"
             className={hoverEffectLink}
+            rel="noreferrer"
           >
             Visit Website
           </a>
         </div>
         <div className={cardCss}>
-          <img src={ecommerce} className="w-60 bg-slate-300 rounded-lg"></img>
+          <img src={ecommerce} className="w-60 bg-slate-300 rounded-lg" alt=""></img>
           <p>Clincal Web (MERN stack)</p>
           <div className="flex gap-2 items-center text-white font-bold">
             <div className="border bg-orange-400 rounded-lg px-2 py-1 text-[12px] flex items-center">
@@ -65,12 +66,13 @@ export default function Project() {
             href="https://yujing.netlify.app/"
             target="_blank"
             className={hoverEffectLink}
+            rel="noreferrer"
           >
             Visit Website
           </a>
         </div>
         <div className={cardCss}>
-          <img src={ecommerce} className="w-60 bg-slate-300 rounded-lg"></img>
+          <img src={ecommerce} className="w-60 bg-slate-300 rounded-lg" alt=""></img>
           <p className="w-60">SSD (School project)</p>
           <div className="flex gap-2 items-center text-white font-bold">
             <div className="border bg-orange-400 rounded-lg px-2 py-1 text-[12px] flex items-center">
@@ -91,6 +93,7 @@ export default function Project() {
             href="https://github.com/ict3103/3x03_Team17_Project"
             target="_blank"
             className={hoverEffectLink}
+            rel="noreferrer"
           >
             View Github
           </a>
@@ -99,6 +102,7 @@ export default function Project() {
           <img
             src={fishProject}
             className="w-60 h-40 bg-slate-300 rounded-lg"
+            alt=""
           ></img>
           <p>Fish on a conveyor belt (2022)</p>
           <div className="flex gap-2 items-center text-white font-bold">
@@ -116,6 +120,7 @@ export default function Project() {
             href="https://github.com/fishguardians/fishing-on-a-conveyor-belt"
             target="_blank"
             className={hoverEffectLink}
+            rel="noreferrer"
           >
             View Github
           </a>
